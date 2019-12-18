@@ -1,12 +1,11 @@
 {
-  "presets": [
-    "es2015",
-    "react"
-  ],
+  "presets": ["@babel/preset-env", "@babel/preset-react"],
   "plugins": [
-    "syntax-async-functions",
-    "transform-class-properties",
-    "transform-object-rest-spread",
-    "transform-regenerator"
+    "@babel/plugin-proposal-optional-catch-binding",
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-transform-async-to-generator",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-transform-regenerator"
   ]
 }
